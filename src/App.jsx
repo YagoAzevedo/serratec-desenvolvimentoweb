@@ -1,5 +1,5 @@
-import Cabecalho from './Cabecalho';
-import Corpo from './Corpo';
+import Cabecalho from './components/Cabecalho';
+import Corpo from './components/Corpo';
 import './styles.css';
 
 function App() {

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './styles.css';
 
 const Contador = () => {
     const [numero, setNumero] = useState(1);
@@ -13,16 +14,17 @@ const Contador = () => {
     }
 
     return (
-        <>
+        <div className="contador-wrapper">
+            <h3>Contador</h3>
             {/* PROP: Parametros dos componentes React */}
-            <Texto valor={numero} />
             <button onClick={() => alterarValor()}>Aumentar</button>
-        </>
+            <Texto valor={numero} />
+        </div>
     )
 };
 
 const Texto = ({ valor }) => {
-    return (<p>{valor}</p>)
+    return (<span>{valor}</span>)
 }
 
 export default Contador;
