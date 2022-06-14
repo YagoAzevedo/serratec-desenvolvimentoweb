@@ -31,6 +31,7 @@ const Contador = () => {
   );
 };
 
+// PROP
 const Texto = ({ valor }) => {
   return <span>{valor}</span>;
 };
