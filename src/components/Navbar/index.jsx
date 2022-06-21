@@ -37,7 +37,7 @@ const Navbar = () => {
             News
           </Typography>
           <Button color="inherit">
-            <MyLink to="/materias/cadastro">Login</MyLink>
+            <MyLink to="/alunos">Alunos</MyLink>
           </Button>
           <Button color="inherit" onClick={alterarTema}>
             Alterar tema

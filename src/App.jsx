@@ -13,9 +13,11 @@ function App() {
   const tema = {
     claro: {
       backgroundColor: "#fff",
+      color: "#363535"
     },
     escuro: {
       backgroundColor: "#363535",
+      color: "#fff"
     },
   };
 
