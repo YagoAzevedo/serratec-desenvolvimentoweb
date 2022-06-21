@@ -8,15 +8,23 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { MyLink } from "../../Styles";
 import { useContext } from "react";
 import { TemaContext } from "../../context";
+import styled from "styled-components";
 
 const Navbar = () => {
   const { temaSelecionado, setTemaSelecionado } = useContext(TemaContext);
   
   const alterarTema = () => {
-    if (temaSelecionado === "claro") {
-        setTemaSelecionado("escuro")
-    } else {
-        setTemaSelecionado("claro")
+    const temaAux = temaSelecionado === "claro" ? "escuro" : "claro";    
+    localStorage.setItem("temaSelecionado", temaAux);
+    setTemaSelecionado(temaAux)
+  }
+
+  const tema = {
+    claro: {
+      // 
+    },
+    escuro: {
+
     }
   }
 
